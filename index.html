@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Formulario Responsivo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Cadastro de Vendas</h1>
+            <form action="">
+                <!-- Número da Nota Fiscal -->
+                <label for="notaFiscal">Número da Nota Fiscal</label>
+                <input name="notaFiscal" id="notaFiscal" type="text" placeholder="Digite o número da nota fiscal" required>
+                
+                <!-- Nome do Vendedor -->
+                <label for="nomeVendedor" >Nome do Vendedor <i class="fa fa-address-card-o" aria-hidden="true"></i></label>
+                <input name="nomeVendedor" id="nomeVendedor" type="text" placeholder="Digite o nome do vendedor " required>
+                
+                <!-- Comissão do Vendedor (em percentual) -->
+                <label for="comissaoVendedor">Comissão do Vendedor (%)</label>
+                <input name="comissaoVendedor" id="comissaoVendedor" type="number" step="0.01" min="0" max="100" placeholder="Digite a comissão em %" required>
+                
+                <!-- Valor de Venda da Máquina -->
+                <label for="valorVenda">Valor de Venda da Máquina (R$)</label>
+                <input name="valorVenda" id="valorVenda" type="number" step="0.01" min="0" placeholder="Digite o valor de venda da máquina" required>
+                
+                <!-- Número de Série da Máquina -->
+                <label for="numeroSerie">Número de Série da Máquina</label>
+                <input name="numeroSerie" id="numeroSerie" type="text" placeholder="Digite o número de série da máquina" required>
+                
+                <!-- Data e Hora da Venda -->
+                <label for="dataHoraVenda">Data e Hora da Venda</label>
+                <input name="dataHoraVenda" id="dataHoraVenda" type="datetime-local" required>
+                
+                <!-- Data de Expiração da Garantia (1 ano após a data da venda) -->
+                <label for="dataExpiracaoGarantia">Data de Expiração da Garantia <i class="fa fa-calendar-check-o" aria-hidden="true"></i></label>
+                <input name="dataExpiracaoGarantia" id="dataExpiracaoGarantia" type="date" required readonly>
+            
+                <!-- Botão para Submeter o Formulário -->
+                <button type="submit">Cadastrar Venda</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
